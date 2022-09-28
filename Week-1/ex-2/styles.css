@@ -1,0 +1,48 @@
+/* colors */
+:root {
+  --primary_background: #454545;
+  --secondary_background: #f0f0f0;
+}
+
+/* reset styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+/* utility classes */
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+/* main styles */
+.album__hero {
+  background-color: var(--primary_background);
+  padding: 2rem;
+  display: flex;
+}
+
+.albumTitle__container {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.albumTitle__container > h1 {
+  margin-bottom: 0.75rem;
+}
+
+.albumTitle__container--bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 30ch;
+}
+
+.albumTitle__bottomItem {
+  display: flex;
+  align-items: center;
+}
