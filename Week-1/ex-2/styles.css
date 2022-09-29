@@ -22,10 +22,10 @@
   background-color: var(--primary_background);
   padding: 2rem;
   display: flex;
+  column-gap: 2rem;
 }
 
 .albumTitle__container {
-  margin-left: 2rem;
   position: relative;
 }
 
