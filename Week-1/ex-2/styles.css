@@ -2,6 +2,7 @@
 :root {
   --primary_background: #454545;
   --secondary_background: #f0f0f0;
+  --black: #000;
 }
 
 /* reset styles */
@@ -9,7 +10,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  color: white;
 }
 
 /* utility classes */
@@ -19,6 +19,7 @@
 
 /* main styles */
 .album__hero {
+  color: white;
   background-color: var(--primary_background);
   padding: 2rem;
   display: flex;
@@ -30,7 +31,7 @@
 }
 
 .albumTitle__container > h1 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem !important;
 }
 
 .albumTitle__container--bottom {
@@ -45,4 +46,29 @@
 .albumTitle__bottomItem {
   display: flex;
   align-items: center;
+}
+
+.album__content {
+  color: var(--black);
+  padding: 0.75rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.75rem;
+}
+
+tr:nth-child(even) {
+  background-color: var(--secondary_background);
+}
+
+a {
+  padding: 0.2rem;
+  border: 1px solid var(--black);
+  text-decoration: none;
 }
