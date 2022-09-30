@@ -16,20 +16,23 @@
 .ml-1 {
   margin-left: 0.5rem;
 }
-
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
 .pointer {
   cursor: pointer;
-}
-
-body {
-  display: flex;
 }
 
 .side_nav {
   background-color: var(--secondary_background);
   padding: 0.75rem;
   min-height: calc(100vh - 119.5px);
-  display: flex;
   flex-direction: column;
   row-gap: 2rem;
   justify-content: space-around;
@@ -43,7 +46,6 @@ main {
   color: white;
   background-color: var(--primary_background);
   padding: 2rem;
-  display: flex;
   column-gap: 2rem;
 }
 
@@ -58,14 +60,10 @@ main {
 .albumTitle__container--bottom {
   position: absolute;
   bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   min-width: 30ch;
 }
 
 .albumTitle__bottomItem {
-  display: flex;
   align-items: center;
 }
 
@@ -102,19 +100,13 @@ a {
   color: white;
   width: 100%;
   padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .album__art {
-  display: flex;
-  align-items: center;
   column-gap: 1rem;
 }
 
 .album__actionButtons {
-  display: flex;
   column-gap: 8rem;
 }
 
