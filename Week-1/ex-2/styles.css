@@ -17,7 +17,28 @@
   margin-left: 0.5rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+}
+
+.side_nav {
+  background-color: var(--secondary_background);
+  padding: 0.75rem;
+  min-height: calc(100vh - 119.5px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: space-around;
+}
+
 /* main styles */
+main {
+  flex-grow: 1;
+}
 .album__hero {
   color: white;
   background-color: var(--primary_background);
@@ -30,8 +51,8 @@
   position: relative;
 }
 
-.albumTitle__container > h1 {
-  margin-bottom: 0.75rem !important;
+.albumTitle__container h1 {
+  margin-bottom: 0.75rem;
 }
 
 .albumTitle__container--bottom {
@@ -75,6 +96,7 @@ a {
 
 .album__playback {
   position: absolute;
+  left: 0;
   bottom: 0;
   background-color: var(--tertiary_background);
   color: white;
@@ -98,8 +120,4 @@ a {
 
 .album__actionButtons .las {
   font-weight: 600;
-}
-
-.album__actionButtons .las:hover {
-  cursor: pointer;
 }
