@@ -1,3 +1,10 @@
+/* colors */
+:root {
+  --primary_background: #454545;
+  --secondary_background: #f0f0f0;
+  --tertiary_background: #2e6dc6;
+}
+
 /* reset styles */
 * {
   margin: 0;
@@ -59,4 +66,16 @@ body {
 .heading {
   max-width: 30ch;
   line-height: 3rem;
+}
+
+.link {
+  color: palevioletred;
+}
+
+.btn__primary {
+  padding: 0.5rem 2rem;
+  background-color: var(--tertiary_background);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
 }
