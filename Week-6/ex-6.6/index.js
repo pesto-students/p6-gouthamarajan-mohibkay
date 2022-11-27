@@ -20,3 +20,6 @@ function threeSum(arr, sum) {
 }
 
 threeSum([-1, 2, 1, -4], -3);
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
