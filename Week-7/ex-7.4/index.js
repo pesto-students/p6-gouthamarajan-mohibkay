@@ -70,3 +70,6 @@ function isParenthesisMatching(string) {
   }
   return stack.isEmpty();
 }
+
+// Time complexity : O(n)
+// Space complexity: O(n)

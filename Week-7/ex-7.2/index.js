@@ -146,3 +146,7 @@ list.push(999);
 console.log(list);
 console.log(list.rotate(2));
 console.log(list);
+
+// Reversing a Linked List
+// Time complexity : O(n + n) --> O(n)
+// Space complexity: O(1)

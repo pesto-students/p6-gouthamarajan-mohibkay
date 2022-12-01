@@ -142,3 +142,7 @@ list.push(999);
 console.log(list);
 console.log(list.reverse());
 console.log(list);
+
+// Reversing a Linked List
+// Time complexity : O(n)
+// Space complexity: O(n)

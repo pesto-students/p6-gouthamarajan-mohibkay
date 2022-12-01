@@ -20,3 +20,6 @@ function nextGreaterElement(arr) {
 }
 
 nextGreaterElement([5, 7, 0, 2, 4, 10]);
+
+// Time complexity : O(n)
+// Space complexity: O(n)
