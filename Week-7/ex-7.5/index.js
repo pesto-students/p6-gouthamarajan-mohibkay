@@ -18,3 +18,5 @@ function nextGreaterElement(arr) {
   }
   return result.join(' ');
 }
+
+nextGreaterElement([5, 7, 0, 2, 4, 10]);
