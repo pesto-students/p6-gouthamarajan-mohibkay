@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "todo": "Give dog a bath",
+    "complete": false
+  },
+  {
+    "id": 2,
+    "todo": "Do laundry",
+    "complete": false
+  },
+  {
+    "id": 3,
+    "todo": "Vacuum floor",
+    "complete": false
+  },
+  {
+    "id": 4,
+    "todo": "Feed cat",
+    "complete": false
+  },
+  {
+    "id": 5,
+    "todo": "Change light bulbs",
+    "complete": false
+  },
+  {
+    "id": 6,
+    "todo": "Go to Store",
+    "complete": false
+  },
+  {
+    "id": 7,
+    "todo": "Fill gas tank",
+    "complete": false
+  },
+  {
+    "id": 8,
+    "todo": "Change linens",
+    "complete": false
+  },
+  {
+    "id": 9,
+    "todo": "Rake leaves",
+    "complete": false
+  },
+  {
+    "id": 10,
+    "todo": "Bake Cookies",
+    "complete": false
+  }
+]
