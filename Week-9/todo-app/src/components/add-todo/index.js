@@ -6,8 +6,12 @@ const AddTodo = ({ allTodos, setAllTodos }) => {
 
   const addNewTodo = (e) => {
     e.preventDefault();
-    setAllTodos([...allTodos, { id, todo, complete: false }]);
-    setTodo('');
+    if (todo) {
+      setAllTodos([...allTodos, { id, todo, complete: false }]);
+      setTodo('');
+    } else {
+      alert("Todo item can't be empty!");
+    }
   };
 
   return (
