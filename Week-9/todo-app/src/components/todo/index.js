@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-const Todo = ({ id, task, complete }) => {
+const Todo = ({ id, todo, complete }) => {
   const [isChecked, setIsChecked] = useState(complete);
 
   return (
-    <li>
+    <li className='todo_ListItem'>
       <input
         type='checkbox'
         name={id}
@@ -14,9 +14,10 @@ const Todo = ({ id, task, complete }) => {
       />
       <label
         htmlFor={id}
+        className='todo__label'
         style={{ textDecoration: isChecked ? 'line-through' : undefined }}
       >
-        {task}
+        {todo}
       </label>
     </li>
   );
