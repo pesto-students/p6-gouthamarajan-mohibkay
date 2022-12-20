@@ -3,12 +3,16 @@ import axios from 'axios';
 
 const LinkInput = ({ setShortLinkData }) => {
   const shortenLink = async (inputValue) => {
-    const { data } = await axios.get(
-      `https://api.shrtco.de/v2/shorten?url=${inputValue}`
-    );
-    console.log(data);
-    const { result } = data;
-    setShortLinkData(result);
+    try {
+      const { data } = await axios.get(
+        `https://api.shrtco.de/v2/shorten?url=${inputValue}`
+      );
+      console.log(data);
+      const { result } = data;
+      setShortLinkData(result);
+    } catch (error) {
+      alert(error);
+    }
   };
 
   const handleSubmit = (e) => {
