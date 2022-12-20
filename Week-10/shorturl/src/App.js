@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import './App.css';
+import LinkDisplay from './components/link-display';
 import LinkInput from './components/link-input';
 
 function App() {
-  // fetch(
-  //   'https://api.shrtco.de/v2/shorten?url=https://github.com/pesto-students/p6-gouthamarajan-mohibkay/pull/9'
-  // ).then((data) => console.log(data.json()));
+  const [shortLinkData, setShortLinkData] = useState({});
 
   return (
     <div className='App'>
@@ -13,7 +13,8 @@ function App() {
       </header>
 
       <main>
-        <LinkInput />
+        <LinkInput setShortLinkData={setShortLinkData} />
+        <LinkDisplay shortLinkData={shortLinkData} />
       </main>
     </div>
   );
