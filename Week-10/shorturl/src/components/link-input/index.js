@@ -1,9 +1,10 @@
 import axios from 'axios';
 import styles from './link-input.module.css';
 
-const LinkInput = ({ setShortLinkData }) => {
+const LinkInput = ({ setShortLinkData, setIsLoading }) => {
   const shortenLink = async (inputValue) => {
     try {
+      setIsLoading(true);
       const { data } = await axios.get(
         `https://api.shrtco.de/v2/shorten?url=${inputValue}`
       );
@@ -12,6 +13,8 @@ const LinkInput = ({ setShortLinkData }) => {
       setShortLinkData(result);
     } catch (error) {
       alert(error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -25,6 +28,7 @@ const LinkInput = ({ setShortLinkData }) => {
       alert('URL can not be blank');
     }
   };
+
   return (
     <section className={styles['linkInput__container']}>
       <form onSubmit={handleSubmit} className={styles['linkInput__form']}>
@@ -32,8 +36,11 @@ const LinkInput = ({ setShortLinkData }) => {
           type='url'
           placeholder='Shorten a link here...'
           className={styles['linkInput__textField']}
+          value='https://www.freecodecamp.org/news/how-to-style-react-apps-with-css/'
         />
-        <button type='submit'>Shorten It!</button>
+        <button type='submit' className={styles['linkInput__button']}>
+          Shorten It!
+        </button>
       </form>
     </section>
   );

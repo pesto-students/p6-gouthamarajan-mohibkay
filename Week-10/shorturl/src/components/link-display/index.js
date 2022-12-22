@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './link-display.module.css';
 
 const LinkDisplay = ({ shortLinkData }) => {
   const [isLinkCopied, setIsLinkCopied] = useState(false);
@@ -14,16 +15,26 @@ const LinkDisplay = ({ shortLinkData }) => {
   };
 
   return (
-    <section>
-      <p>
-        <a href={originalLink} target='blank'>
-          {originalLink}
-        </a>
-        <a href={shortenedLink} target='blank'>
-          {shortenedLink}
-        </a>
-        <button onClick={copyToClipboard}>{copyButtonTitle}</button>
-      </p>
+    <section className={styles['linkDisplay__container']}>
+      <div className={styles['linkDisplay__wrapper']}>
+        <div>
+          <a href={originalLink} target='blank'>
+            {originalLink}
+          </a>
+        </div>
+
+        <div className={styles['linkDisplay__shortenedLink']}>
+          <a href={shortenedLink} target='blank'>
+            {shortenedLink}
+          </a>
+          <button
+            onClick={copyToClipboard}
+            className={styles['linkDisplay__button']}
+          >
+            {copyButtonTitle}
+          </button>
+        </div>
+      </div>
     </section>
   );
 };
