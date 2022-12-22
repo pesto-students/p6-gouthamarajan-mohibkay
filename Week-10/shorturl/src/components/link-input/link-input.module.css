@@ -1,5 +1,5 @@
 .linkInput__container {
-  border: 1px solid var(--tertiary-bg);
+  border: 1px solid var(--tertiary);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 2rem 5rem;
   border-radius: 8px;

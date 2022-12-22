@@ -17,7 +17,7 @@ const LinkDisplay = ({ shortLinkData }) => {
   return (
     <section className={styles['linkDisplay__container']}>
       <div className={styles['linkDisplay__wrapper']}>
-        <div>
+        <div className={styles['linkDisplay__originalLink']}>
           <a href={originalLink} target='blank'>
             {originalLink}
           </a>

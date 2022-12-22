@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+.hero__heading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.hero__subheading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}

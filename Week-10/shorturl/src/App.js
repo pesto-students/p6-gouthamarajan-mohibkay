@@ -4,6 +4,7 @@ import LinkDisplay from './components/link-display';
 import LinkInput from './components/link-input';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import Hero from './components/hero-section';
 
 function App() {
   const [shortLinkData, setShortLinkData] = useState({});
@@ -12,11 +13,8 @@ function App() {
 
   return (
     <div className='app'>
-      <header className='app-header'>
-        <h1>shorturl</h1>
-      </header>
-
-      <main>
+      <Hero />
+      <main className='main'>
         <LinkInput
           setShortLinkData={setShortLinkData}
           setIsLoading={setIsLoading}
