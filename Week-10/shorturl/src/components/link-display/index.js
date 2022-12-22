@@ -14,7 +14,7 @@ const LinkDisplay = ({ shortLinkData }) => {
   };
 
   return (
-    <div>
+    <section>
       <p>
         <a href={originalLink} target='blank'>
           {originalLink}
@@ -24,7 +24,7 @@ const LinkDisplay = ({ shortLinkData }) => {
         </a>
         <button onClick={copyToClipboard}>{copyButtonTitle}</button>
       </p>
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,5 @@
-import React from 'react';
 import axios from 'axios';
+import styles from './link-input.module.css';
 
 const LinkInput = ({ setShortLinkData }) => {
   const shortenLink = async (inputValue) => {
@@ -26,9 +26,13 @@ const LinkInput = ({ setShortLinkData }) => {
     }
   };
   return (
-    <section>
-      <form onSubmit={handleSubmit}>
-        <input type='url' placeholder='Shorten a link here...' />
+    <section className={styles['linkInput__container']}>
+      <form onSubmit={handleSubmit} className={styles['linkInput__form']}>
+        <input
+          type='url'
+          placeholder='Shorten a link here...'
+          className={styles['linkInput__textField']}
+        />
         <button type='submit'>Shorten It!</button>
       </form>
     </section>

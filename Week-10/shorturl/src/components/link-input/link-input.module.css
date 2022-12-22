@@ -1,0 +1,13 @@
+.linkInput__container {
+  border: 1px solid red;
+  padding: 2rem 2.5rem;
+}
+
+.linkInput__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkInput__textField {
+  flex-grow: 0.8;
+}
