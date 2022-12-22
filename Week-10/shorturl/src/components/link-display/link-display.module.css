@@ -15,7 +15,7 @@
 }
 
 .linkDisplay__shortenedLink {
-  color: var(--secondary-bg);
+  color: var(--secondary);
 }
 
 .linkDisplay__button {
@@ -24,7 +24,7 @@
   margin-left: 1rem;
   cursor: pointer;
   border: none;
-  background-color: var(--secondary-bg);
+  background-color: var(--secondary);
   color: var(--text-color);
   font-weight: bold;
 }
