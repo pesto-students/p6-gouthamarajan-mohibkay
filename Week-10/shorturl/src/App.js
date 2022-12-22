@@ -6,6 +6,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Hero from './components/hero-section';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 function App() {
   const [shortLinkData, setShortLinkData] = useState({});
@@ -28,6 +29,8 @@ function App() {
           <LinkDisplay shortLinkData={shortLinkData} />
         ) : null}
       </main>
+
+      <Footer />
     </div>
   );
 }

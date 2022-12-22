@@ -1,8 +1,10 @@
 .app {
-  max-width: 1140px;
-  margin: auto;
+  position: relative;
+  min-height: calc(100vh + 138px);
 }
 
 .main {
   padding: 2rem 3rem;
+  max-width: 1140px;
+  margin: 0 auto;
 }
