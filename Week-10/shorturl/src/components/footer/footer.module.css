@@ -5,8 +5,8 @@
   background-color: var(--primary);
   min-width: 100%;
   color: white;
-  position: absolute;
   bottom: 0;
+  padding: 2rem 0;
 }
 
 .footer__content {

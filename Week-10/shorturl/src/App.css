@@ -1,6 +1,5 @@
 .app {
   position: relative;
-  min-height: calc(100vh + 138px);
 }
 
 .main {

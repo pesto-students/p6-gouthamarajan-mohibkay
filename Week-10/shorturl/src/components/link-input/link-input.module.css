@@ -43,7 +43,7 @@
 
 .linkInput__textField {
   flex-grow: 0.8;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 8px;
   border: 1px solid gray;
   outline: none;

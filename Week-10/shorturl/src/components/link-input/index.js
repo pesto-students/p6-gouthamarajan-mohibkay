@@ -1,7 +1,14 @@
+import { useRef, useEffect } from 'react';
 import axios from 'axios';
 import styles from './link-input.module.css';
 
 const LinkInput = ({ setShortLinkData, setIsLoading }) => {
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   const shortenLink = async (inputValue) => {
     try {
       setIsLoading(true);
@@ -37,7 +44,7 @@ const LinkInput = ({ setShortLinkData, setIsLoading }) => {
           type='url'
           placeholder='Shorten a link here...'
           className={styles['linkInput__textField']}
-          value='https://www.freecodecamp.org/news/how-to-style-react-apps-with-css/'
+          ref={inputRef}
         />
         <button type='submit' className={styles['linkInput__button']}>
           Shorten It!
