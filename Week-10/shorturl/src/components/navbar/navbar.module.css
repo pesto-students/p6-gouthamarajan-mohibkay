@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.navbar__brand {
+  font-size: 1rem;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 0.8;
+  list-style-type: none;
+}

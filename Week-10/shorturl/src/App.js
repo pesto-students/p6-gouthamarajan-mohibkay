@@ -5,6 +5,7 @@ import LinkInput from './components/link-input';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Hero from './components/hero-section';
+import Navbar from './components/navbar';
 
 function App() {
   const [shortLinkData, setShortLinkData] = useState({});
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div className='app'>
+      <Navbar />
       <Hero />
       <main className='main'>
         <LinkInput
