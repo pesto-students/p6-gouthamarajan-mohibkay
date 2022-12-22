@@ -1,23 +1,60 @@
 .linkInput__container {
-  border: 1px solid red;
+  border: 1px solid var(--tertiary-bg);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 2rem 5rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  position: relative;
+  max-height: 101px;
+  overflow: hidden;
+}
+
+.linkInput__container::before {
+  display: block;
+  content: '';
+  height: 500px;
+  width: 600px;
+  background-color: var(--primary-bg);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25%;
+  left: -4%;
+  z-index: -10;
+}
+
+.linkInput__container::after {
+  display: block;
+  content: '';
+  height: 500px;
+  width: 600px;
+  background-color: var(--primary-bg);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50%;
+  right: -38%;
+  z-index: -10;
 }
 
 .linkInput__form {
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .linkInput__textField {
   flex-grow: 0.8;
   padding: 0.5rem 1rem;
   border-radius: 8px;
+  border: 1px solid gray;
+  outline: none;
 }
 
 .linkInput__button {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
+  background-color: var(--secondary-bg);
+  border: none;
+  color: var(--text-color);
+  font-weight: bold;
 }

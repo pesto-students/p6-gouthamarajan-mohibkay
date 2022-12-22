@@ -23,8 +23,12 @@ const LinkDisplay = ({ shortLinkData }) => {
           </a>
         </div>
 
-        <div className={styles['linkDisplay__shortenedLink']}>
-          <a href={shortenedLink} target='blank'>
+        <div className={styles['linkDisplay__shortenedLinkWrapper']}>
+          <a
+            href={shortenedLink}
+            target='blank'
+            className={styles['linkDisplay__shortenedLink']}
+          >
             {shortenedLink}
           </a>
           <button

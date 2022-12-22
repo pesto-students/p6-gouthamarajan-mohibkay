@@ -31,6 +31,7 @@ const LinkInput = ({ setShortLinkData, setIsLoading }) => {
 
   return (
     <section className={styles['linkInput__container']}>
+      <div className={styles['circle']}></div>
       <form onSubmit={handleSubmit} className={styles['linkInput__form']}>
         <input
           type='url'
