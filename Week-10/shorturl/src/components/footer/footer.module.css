@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--primary);
+  min-width: 100%;
+  color: white;
+  bottom: 0;
+  padding: 2rem 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 0.1;
+}
+
+.footer__content li {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+}
+
+.footer__content li:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,35 @@
+.linkDisplay__container {
+  border: 1px solid rgb(227, 226, 226);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.linkDisplay__wrapper {
+  border: 1px solid var(--tertiary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.linkDisplay__originalLink {
+  color: black;
+  max-width: 70ch;
+}
+
+.linkDisplay__shortenedLink {
+  color: var(--secondary);
+}
+
+.linkDisplay__button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--secondary);
+  color: var(--text-color);
+  font-weight: bold;
+}
